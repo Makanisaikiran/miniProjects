@@ -1,0 +1,412 @@
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+p,
+ul,
+li,
+form,
+input,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* Header styling */
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+li a:hover{
+  color: #e8491d;
+}
+/* Main section styling */
+.hero {
+  background: url("https://b.zmtcdn.com/data/reviews_photos/67b/caefe877c48c3676e06355d5858c867b_1528097248.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*")
+    no-repeat center center/cover;
+  color: #ffffff;
+  padding: 2rem;
+  text-align: center;
+  animation: fadeIn 2s ease-out;
+}
+
+.hero h2 {
+  font-size: 2rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #e8491d;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #d7411c;
+}
+
+/* Menu section styling */
+#menu {
+  padding: 2rem;
+  text-align: center;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 1rem;
+  padding: 1rem;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+  animation: slideY 600ms ease-in forwards;
+}
+
+.menu-item img {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  transition: all 600ms ease 400ms;
+}
+
+.menu-item img:hover{
+  transform:scale(1.5) rotateZ(720deg); 
+  border-radius: 3px;
+}
+
+.menu-item h3 {
+  margin: 0.5rem 0;
+}
+
+.menu-item span {
+  display: block;
+  font-weight: bold;
+  color: #e8491d;
+}
+
+/* Featured Dishes section styling */
+#featured-dishes {
+  padding: 2rem;
+  background: #eee;
+  text-align: center;
+}
+
+.featured-dishes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dish {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 1rem;
+  padding: 1rem;
+  width: calc(50% - 2rem);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+}
+.right {
+  animation: slideInR 1s ease-in forwards;
+}
+.left {
+  animation: slideInL 1s ease-in forwards;
+}
+
+.dish img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.dish h3 {
+  margin: 0.5rem 0;
+}
+
+/* best places section styling */
+#best-places {
+  padding: 2rem;
+  text-align: center;
+}
+
+.places {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.place {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 1rem;
+  padding: 1rem;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+.place img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.place h3 {
+  margin: 0.5rem 0;
+}
+
+/* Testimonials section styling */
+#testimonials {
+  padding: 2rem;
+  text-align: center;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 1rem 0;
+  padding: 1rem;
+  width: 80%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+.testimonial p {
+  font-style: italic;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #e8491d;
+}
+
+/* FAQ section styling */
+#faq {
+  padding: 2rem;
+  background: #eee;
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+.faq-item h3 {
+  margin-bottom: 0.5rem;
+  color: #e8491d;
+}
+
+.faq-item p {
+  margin: 0;
+  color: #666;
+}
+
+/* About section styling */
+#about {
+  padding: 2rem;
+  text-align: center;
+}
+
+#about p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Contact section styling */
+#contact {
+  padding: 2rem;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 0.5rem 1rem;
+  background: #e8491d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #d7411c;
+}
+
+/* Footer styling */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInR {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideY {
+  from {
+    transform: translateY(5%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInL {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  header {
+    position: static;
+  }
+
+  .menu-item {
+    width: 250px;
+  }
+  .dish,
+  .place,
+  .blog-post {
+    width: calc(100% - 2rem);
+  }
+
+  nav ul li {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 0.5rem;
+  }
+}
